@@ -32,6 +32,7 @@ int dy[] = {+1, -1, 0, 0};
 // Using O(logn) fenwick tree/ Binary Indexed tree
 // (l, r) range sum and increase ind by value val.
 
+// increase value of index(i) with value (add)
 void update(ll i, ll add, ll n, vector<ll> &bit)
 {
     while (i <= n)
@@ -41,6 +42,7 @@ void update(ll i, ll add, ll n, vector<ll> &bit)
     }
 }
 
+// sum of values in range (1,i)
 ll sum(ll i, vector<ll> &bit)
 {
     ll ans = 0;
